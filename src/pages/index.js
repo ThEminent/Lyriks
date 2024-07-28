@@ -1,4 +1,5 @@
-import Discover from './Discover';
+// import Discover from './Discover';
+import Discover from 'Lyriks/Discover';
 import TopArtists from './TopArtists';
 import ArtistDetails from './ArtistDetails';
 import SongDetails from './SongDetails';

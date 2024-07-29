@@ -12,8 +12,11 @@ const Search = () => {
 
   const songs = data;//?.tracks?.hits.map((song) => song.track);
 
-  console.log(typeof(songs));
-
+if (!isFetching){
+  console.log(songs);
+  // const gag = songs.map((gg)=>(gg.title));
+  // console.log("arr:    "+JSON.stringify(gag));
+}
   if (isFetching) return <Loader title={`Searching ${searchTerm}...`} />;
 
   if (error) return <Error />;
